@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'echo $currentBuild'; 
+                sh 'echo $currentResult'; 
             }
         }
         
