@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-               currentBuild
+                env
                 sh 'echo "$currentBuild.currentResult"';
                 
             }
