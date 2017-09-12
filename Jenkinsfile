@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh'env'
+                sh'currentBuild'
                 sh 'echo "$currentBuild.currentResult"';
                 
             }
