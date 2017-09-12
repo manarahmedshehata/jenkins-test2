@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'echo "$VERSION"'; 
+                sh 'echo "$env.VERSION"'; 
             }
         }
         
