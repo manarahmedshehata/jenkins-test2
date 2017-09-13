@@ -6,8 +6,9 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh'env'
-                sh'currentBuild'
-                sh 'echo "$currentBuild.currentResult"';
+                sh' cat dep.yaml | sed s/\$\$EXTERNAL_IP/hiiiiiiiiiii/'
+                
+                sh'cat dep.yaml'
                 
             }
         }
