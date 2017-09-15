@@ -12,9 +12,14 @@ pipeline {
                  
                 sh'cat dep.yaml'*/
                 //sh 'params'
-                sh '${currentBuild}'
+                
             }
         }
         
+    }
+     post {
+        failure {    // notify users when the Pipeline fails
+            mail(to: 'manarahmedshehata@gmail.com', subject: "Failed Pipeline", body: "Something is wrong.")
+        }
     }
 }
