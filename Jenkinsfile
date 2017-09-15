@@ -12,7 +12,7 @@ pipeline {
                  
                 sh'cat dep.yaml'*/
                 //sh 'params'
-                sh 'currentBuild'
+                sh '${currentBuild}'
             }
         }
         
